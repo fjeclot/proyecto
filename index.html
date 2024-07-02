@@ -5,9 +5,11 @@
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Circle Agency</title>
+        <link rel="stylesheet" type="text/css" href="./css/global.css" />
         <link rel="stylesheet" type="text/css" href="./css/index.css" />
+        <link rel="stylesheet" type="text/css" href="./css/burger.css" />
     </head>
-    
+
     <body>
         <header>
             <nav class="nav-bar">
@@ -25,16 +27,28 @@
                         <a class='nav-a' href='/#services'>Services</a>
                     </li>
                 </ul>
+                <a class='btn contact' href='./contact.html' id='contactBtn'>Contact us</a>
                 <div class="burger-menu">
                     <div class="line"></div>
                     <div class="line"></div>
                     <div class="line"></div>
                 </div>
             </nav>
+            <ul class="main-nav">
+                <li>
+                    <a class='nav-a menu' href='/'>Home</a>
+                </li>
+                <li>
+                    <a class='nav-a menu' href='/#projects'>Projects</a>
+                </li>
+                <li>
+                    <a class='nav-a menu' href='/#services'>Services</a>
+                </li>
+            </ul>
         </header>
         <section class="front">
             <div class="front-content">
-                <h1 class="title">Empoyer you Business with Stunning Desing!</h1>
+                <h1 class="title">Empoyer Your Business with Stunning Desing!</h1>
                 <h3>Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.</h3>
                 <div class="front-content-button">
                     <a class="btn" href="#newsletter">Get in touch</a>
@@ -44,7 +58,7 @@
             <div class="content-images">
                 <img class="img-content" src="./hero-section/hero-image.png" alt="hero"/>
                 <img class="img-card" src="./hero-section/card-1.png" alt="card"/>
-                <img class="img-card button" src="./hero-section/card-2.png" alt="card2"/>
+                <img class="img-card-ok" src="./hero-section/card-2.png" alt="card2"/>
             </div>
         </section>
 
@@ -66,9 +80,9 @@
             </a>
         </section>
 
-        <section id="projects">
+        <section class="project" id="projects">
             <h2 class="title">Recent projects</h2>
-            <div clas="project-container">
+            <div class="project-container">
                 <article class="project-chart">
                     <a class='project-cover' href='/'>
                         <img class="img-project" src="./projects-section/1.jpg" alt="project image1"/>
@@ -86,6 +100,7 @@
                             <p class="project-description title">Web development</p>
                             <a class='learn-more' href='/'>Learn more</a>
                         </div>
+                    </a>
                 </article>
                 <article class="project-chart">
                     <a class='project-cover' href='/'>
@@ -108,7 +123,7 @@
                 <img class="reviews-memoji4" src="./testimonial-section/memoji-4.png" alt="memoji4"/>
             </div>
             <div class="reviews-text">
-                <h3 class="title">Hear what our clients have to say</h3>
+                <h3 class="title">Hear What Our Clients Have To Say</h3>
                 <p>"Circle helped us through every stage of our startup.<br/>We really enjoyed working with you."</p>
             </div>
             <div class="reviews-profile">
@@ -139,7 +154,7 @@
                     <p>Circle always focuses on delivering the best user experience to your customers.</p>
                     <a class="learn-more" href="#">Learn more</a>
                 </article>
-                <article class="services-cover">
+                <article class="services-cover irregular">
                     <div class="services-img">
                         <img src="./services-section/icons/3.svg" alt="application development icon" />
                     </div>
@@ -155,7 +170,7 @@
             <h3>Let up help you!</h3>
             <form action="">
                 <input id="email" name="email" type="email" placeholder="Enter your email"/>
-                <a class='newsletter-sub' href='/'>
+                <a class='newsletter-sub' href='./pages/contact.html'>
                     <input type="button" value="Suscribe" />
                 </a>
             </form>
@@ -167,7 +182,7 @@
 
         <footer class="footer">
             <div class="address">
-                <a class='address-logo' href='/'>
+                <a class="address-logo" href='/'>
                     <img src="./logos/circle.svg" alt="circle logo"/>
                 </a>
                 <p>2972 Westheimer Rd. Santa Ana,<br/>Illinois 85486</p>
@@ -176,7 +191,7 @@
                 <li><a href="#">Team</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">About Us</a></li>
-                <li><a href="#">Press</a></li>
+                 <li><a href="#">Press</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Privacy Policy</a></li>
             </ul>

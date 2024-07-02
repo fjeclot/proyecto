@@ -1,0 +1,119 @@
+
+.burger-menu {
+    width: 40px;
+    cursor: pointer;
+    z-index: 200;
+}
+
+.burger-menu:hover {
+    cursor: pointer;
+    z-index: 200;
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    margin: 3px;
+    background-color: black;
+}
+
+.nav-desktop {
+    display: none;
+}
+
+.main-nav {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    top: -1500px;
+    width: 200px;
+    height: 110vh;
+    list-style: none;
+    background-color: rgba(51, 49, 49, 0.4);
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+    transition: all 0.3s ease-out;
+}
+
+.nav-active {
+    right: 0;
+    top: 0;
+    transition: all 0.3s ease-out;
+}
+
+.main-nav li,
+.main-nav a {
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 30px;
+    text-align: start;
+    padding: 5px;
+    background-color: rgb(110, 153, 120); 
+}
+
+.main-nav li:first-child {
+    margin-top: 100px;
+} 
+
+.nav-a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+
+.menu {
+    font-weight: bold;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.white {
+    background-color: white;
+}
+
+.grey-background {
+    background-color: rgba(51, 49, 49, 0.1);
+}
+
+@media  screen and (min-width: 769px) {
+    .burger-menu {
+        display: none;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .nav-desktop {
+        display: flex;
+    }
+
+    .nav-desktop li a {
+        color: grey;
+    }
+
+    .nav-desktop li .menu {
+        color: blue;
+    }
+
+    li {
+        list-style-type: none;
+    }
+} 
+
+@media (max-width: 768px) {
+    .burger-menu {
+        display: block;
+    }
+}
+
+
+
+
+
+

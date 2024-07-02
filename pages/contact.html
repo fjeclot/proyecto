@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Agency</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+          <label class="nav-bar-toggle" for="chkToggle">
+            <i class="fa-bars burger"></i>
+          </label>
+          <a class='logo' href='/'>
+            <img src="../logos/circle.svg" alt=" Logo " />
+          </a>
+          <input type="checkbox" id="chkToggle"></input>
+          <ul class="main-nav">
+            <li>
+              <a class="nav-a menu" href="./index.html">Home</a>
+            </li>
+            <li>
+              <a class="nav-a" href="./index.html#projects">Projects</a>
+            </li>
+            <li>
+              <a class="nav-a" href="./index.html#services">Services</a>
+            </li>
+          </ul>
+          <a class="btn contact" id="contactBtn" href="./pages/contact.html">Contact us</a>
+        </nav>
+      </header>
+
+    <form class="form-class" action="" method="get" id="form-container">
+        <h1>Contact Us</h1>
+
+        <div class="name-div">
+            <label for="name">Full Name</label><br>
+            <input type="text" placeholder="Enter your full name" name="name" id="name" onblur="validateName()"
+                required>
+            <p id="errorName" hidden class="errorForm">Debes introducir un nombre.</p>
+        </div>
+        <div class="email-phone">
+            <div>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" placeholder="Enter your email address"
+                    onblur="validateEmail()" required>
+                <p id="errorEmail" hidden class="errorForm">Please, complete the field EMAIL</p>
+                <p id="errorFormatEmail" hidden class="errorForm">Debes introducir un e-mail</p>
+            </div>
+            <div>
+                <label for="phone">Phone</label><br>
+                <input type="text" name="phone" id="phone" placeholder="Enter your phone number"
+                    onblur="validatePhone()" required>
+                <p id="errorPhone" hidden class="errorForm">Debes introducir tu nº de teléfono</p>
+            </div>
+        </div>
+        <div class="message-div">
+            <label for="message">Message</label><br>
+            <textarea name="message" id="message" cols="30" rows="10"
+                placeholder="Write your message here..." onblur="validateMessage()" required></textarea>
+                <p id="errorMessageUser" hidden class="errorForm">El mensaje debe tener al menos 5 caracteres</p>
+
+        </div>
+        <div class="button-submit">
+            <button type="button" onclick="sendForm()" id="submitForm">Submit</button>
+            <p class="errorForm" id="errorSubmit" hidden>Por favor, revisa los campos obligatorios</p>
+        </div>
+    </form>
+
+    <footer class="footer">
+        <div class="address-info">
+            <a class='address-info-logo' href='/'>
+                <img src="../logos/circle.svg" alt=" Logo " />
+            </a>
+            <p>2972 Westheimer Rd. Santa Ana, <br>Illinois 85486</p>
+        </div>
+        <ul class="footer-table">
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+    </footer>
+    <script src="../js/contact.js"></script>
+</body>
+</html>
