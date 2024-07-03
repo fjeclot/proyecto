@@ -103,7 +103,7 @@ section {
 
 .project-chart {
     margin: 30px auto;
-    padding-bottom: 15px;
+    margin-bottom: 15px;
     width: 80%;
     text-align: left;
     background-color: white;
@@ -112,6 +112,10 @@ section {
     display: flex;
     height: 200px;
     width: 100%;
+}
+
+.project-inner {
+    background-color: white;
 }
 
 .project-chart h4, 
@@ -130,7 +134,7 @@ section {
 .project-chart h4,
 .project-chart p,
 .project-chart .learn-more {
-    padding-left: 15px;
+    margin-left: 0;
 }
 
 .project-chart p {
@@ -325,7 +329,7 @@ section {
         display: flex;
         flex-flow: row wrap;
     }
- 
+    
     .project-chart {
          width: 40%;
     }
