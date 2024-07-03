@@ -306,7 +306,7 @@ section {
 /* desktop */
 
 @media (min-width: 768px) and (max-width: 1500px) {
-    
+   
     .img-content {
         width: 900px;
     }

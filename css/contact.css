@@ -107,7 +107,16 @@ input {
 }
 
 @media (max-width: 678px) {
-    
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        width: 100%;
+        margin: 30px -70px;
+        padding: 0;
+    }
+}
 
 @media (max-width: 575.9px) {
     h1 {
@@ -182,7 +191,7 @@ input {
 }
 
 @media (min-width: 768px) {
-    
+
     .email-phone {
         display: flex;
     }
