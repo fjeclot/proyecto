@@ -10,6 +10,10 @@ body {
   color: var(--selected);
 }
 
+.burger-menu {
+  display: none;
+}
+
 .nav-bar a:hover {
   color: var(--selected);
   text-decoration: underline;
@@ -158,6 +162,7 @@ h1.title {
 }
 
 @media (min-width: 768px) {
+
   .project-image {
     width: 95%;
     height: 50vh;
